@@ -1,0 +1,75 @@
+/*
+@author: HENRYBC
+*/
+package com.groupa.ssi.cmd.accident;
+
+import com.groupa.ssi.common.cmd.AbstractCommand;
+import com.groupa.ssi.common.context.CommandScoped;
+import com.groupa.ssi.model.domain.accident.Accident;
+import com.groupa.ssi.model.domain.personnel.Employee;
+import com.groupa.ssi.model.domain.saClassification.SaCategory;
+import com.groupa.ssi.model.domain.saClassification.SaType;
+import com.groupa.ssi.request.accident.AccidentRequest;
+import com.groupa.ssi.services.accident.AccidentService;
+import com.groupa.ssi.services.personnel.EmployeeService;
+import com.groupa.ssi.services.saClassification.SaCategoryService;
+import com.groupa.ssi.services.saClassification.SaTypeService;
+import org.springframework.beans.factory.annotation.Autowired;
+
+@CommandScoped
+public class AccidentCreateCmd extends AbstractCommand {
+
+    private AccidentRequest accidentRequest;
+
+    @Autowired
+    private AccidentService accidentService;
+
+    @Autowired
+    private SaCategoryService saCategoryService;
+
+    @Autowired
+    private SaTypeService saTypeService;
+
+    @Autowired
+    private EmployeeService employeeService;
+
+    @Override
+    protected void run() {
+        SaCategory saCategory = null;
+        SaType saType = null;
+        Employee employee = null;
+        if (null != accidentRequest.getSaCategoryId()) {
+            saCategory = saCategoryService.procedureFindById(accidentRequest.getSaCategoryId());
+        }
+
+        if (null != accidentRequest.getSaTypeId()) {
+            saType = saTypeService.procedureFindById(accidentRequest.getSaTypeId());
+        }
+
+        if (null != accidentRequest.getEmployeeId()) {
+            employee = employeeService.procedureFindById(accidentRequest.getEmployeeId());
+        }
+
+        Accident accident = composeAccident(accidentRequest, saCategory, saType, employee);
+        accidentService.procedureCreate(accident);
+    }
+
+    public void setAccidentRequest(AccidentRequest accidentRequest) {
+        this.accidentRequest = accidentRequest;
+    }
+
+    private Accident composeAccident(AccidentRequest accidentRequest, SaCategory saCategory, SaType saType, Employee employee) {
+        Accident accident = new Accident();
+        accident.setDescription(accidentRequest.getDescription());
+        accident.setDateAccident(accidentRequest.getDateAccident());
+        accident.setWhereOccurr(accidentRequest.getWhereOccurr());
+        accident.setStatusRecord(accidentRequest.getStatusRecord());
+        accident.setTotalDaysOutOfWork(accidentRequest.getTotalDaysOutOfWork());
+        accident.setTotalDaysRestrictedTransferredWork(accidentRequest.getTotalDaysRestrictedTransferredWork());
+        accident.setSaCategory(saCategory);
+        accident.setSaType(saType);
+        accident.setEmployee(employee);
+
+        return accident;
+    }
+}
