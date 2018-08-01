@@ -1,394 +1,410 @@
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/saClassification/SaCategoryRepositoryProcedureImpl.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/Personnel/EmployeeListCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/services/personnel/RoleService.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/sickness/SicknessCreateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/audit/SafetyRuleResponseBuilder.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/services/common/FileDocumentService.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/personalprotectionequipment/ExistingPpeReadCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/audit/SafetyRuleListController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/services/catalog/PpeClassificationService.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/audit/SafetyRuleCreateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/personalprotectionequipment/ExistingPpeAssignedResponseBuilder.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/FunctionManualProcedures.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/personnel/EmployeeResponseBuilder.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/config/SwaggerConfig.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/personalprotectionequipment/PpeDeleteCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/workitem/WorkItemRepositoryProcedure.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/accident/AccidentCreateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/accident/AccidentReadCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/request/saclassification/SaTypeRequest.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/accident/AccidentDeleteController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/ExistingPpeCreateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/saclassification/SaCategoryReadController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/workitem/ExistingWorkItemListController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/request/audit/AuditRequest.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/audit/AuditUpdateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/saClassification/SaTypeResponse.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/services/sickness/SicknessService.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/services/personnel/EmployeeService.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/AuditProcedures.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/saclassification/SaCategoryCreateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/saclassification/SaCategoryDeleteCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/request/functionmanual/FunctionManualRequest.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/ExistingPpeAssignedUpdateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/personalprotectionequipment/PpeReadCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/Personnel/DepartmentDeleteCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/saclassification/SaTypeReadController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/functionmanual/FunctionManualRepository.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/ExistingWorkItemProcedures.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/saclassification/SaTypeReadCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/workitem/WorkItemListCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/functionmanual/FunctionManualRepositoryProcedure.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/audit/AuditReadCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/functionmanual/FunctionManualReadController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/catalog/PpeClassificationListCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/config/RestConfig.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personnel/RoleDeleteController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/common/GenericRepositoryProcedureImpl.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/accident/AccidentUpdateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/Personnel/EmployeeUpdateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/personalprotectionequipment/ExistingPpeRepository.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/common/response/rest/RestResponse.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/AccidentProcedures.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/domain/audit/Audit.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/common/FileDocumentDownloadCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/request/audit/SafetyRuleRequest.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personnel/EmployeeListController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/services/workitem/ExistingWorkItemService.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/domain/saClassification/SaCategory.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/PpeProcedures.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/report/ReportResponseBuilder.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/catalog/WorkItemClassificationRepositoryProcedure.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/common/FileDocumentResponse.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/audit/AuditDeleteController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/Personnel/EmployeeCreateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/personalprotectionequipment/ExistingPpeAssignedResponse.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/personalprotectionequipment/ExistingPpeAssignedRepositoryProcedureImpl.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/common/cmd/AbstractCommand.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/personalprotectionequipment/PpeRepository.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/catalog/WorkItemClassificationDeleteController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/services/personnel/DepartmentService.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/Personnel/DepartmentUpdateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/ExistingPpeReadController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/sickness/SicknessCreateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/domain/functionmanual/FunctionManual.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/catalog/PpeClassificationRepositoryProcedure.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/audit/AuditCreateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/workitem/ExistingWorkItemResponse.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/RoleProcedures.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/workitem/ExistingWorkItemDeleteController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/personnel/DepartmentRepositoryProcedure.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/common/FileDocumentDownloadController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/services/accident/AccidentService.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personnel/RoleAbstractController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/services/functionmanual/FunctionManualService.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/workitem/ExistingWorkItemResponseBuilder.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personnel/DepartmentReadController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/catalog/PpeClassificationRepository.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/ExistingPpeAssignedAbstractController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/audit/AuditAbstractController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/saclassification/SaCategoryCreateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/Personnel/DepartmentCreateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/saClassification/SaCategoryResponseBuilder.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/ExistingPpeAssignedReadController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/catalog/WorkItemClassificationCreateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/saclassification/SaTypeCreateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/common/constant/EnumSaType.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/saclassification/SaCategoryUpdateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/saclassification/SaCategoryListCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/saClassification/SaCategoryResponse.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/ExistingPpeAssignedDeleteController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/workitem/ExistingWorkItemCreateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/personnel/EmployeeResponse.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/audit/AuditResponse.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/personnel/DepartmentResponse.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/catalog/WorkItemClassificationResponseBuilder.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/personalprotectionequipment/ExistingPpeAssignedRepositoryProcedure.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/workitem/ExistingWorkItemDeleteCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/personalprotectionequipment/ExistingPpeResponse.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/accident/AccidentReadController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/report/ReportResponse.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/sickness/SicknessResponseBuilder.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/request/report/ReportRequest.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/audit/SafetyRuleDeleteController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/WorkItemProcedures.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/domain/workitem/WorkItem.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/catalog/PpeClassificationUpdateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/personalprotectionequipment/PpeResponse.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/audit/SafetyRuleUpdateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/common/cmd/CommandExecutorService.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/ExistingPpeListController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/personnel/RoleRepositoryProcedure.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/request/catalog/PpeClassificationRequest.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/sickness/SicknessUpdateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/common/FileDocumentResponseBuilder.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/catalog/PpeClassificationAbstractController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/audit/AuditUpdateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/catalog/PpeClassificationCreateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/ExistingPpeAbstractController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/request/personalprotectionequipment/ExistingPpeAssignedRequest.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/saclassification/SaCategoryUpdateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/domain/saClassification/SaType.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/request/sickness/SicknessRequest.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/SsiApplication.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/request/accident/AccidentRequest.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personnel/DepartmentListController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/domain/personnel/Role.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personnel/RoleReadController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personnel/RoleUpdateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/GenericProcedureNames.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/personalprotectionequipment/ExistingPpeAssignedCreateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/functionmanual/FunctionManualCreateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/personnel/DepartmentResponseBuilder.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/audit/AuditListController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/personalprotectionequipment/ExistingPpeRepositoryProcedureImpl.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/personalprotectionequipment/ExistingPpeAssignedListCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/functionmanual/FunctionManualListController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/common/response/rest/RestMessage.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/sickness/SicknessDeleteCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/PpeClassificationProcedures.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/common/cmd/CommandFactoryProducer.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/exception/DeleteEntityConstraintViolationException.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/accident/AccidentResponseBuilder.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/workitem/WorkItemResponseBuilder.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/common/GenericRepositoryProcedure.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/Personnel/RoleUpdateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/accident/AccidentUpdateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/common/response/rest/ListRestResponse.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/sickness/SicknessReadCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/saclassification/SaCategoryRepository.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/personalprotectionequipment/PpeCreateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/ExistingPpeProcedures.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/common/utils/Constants.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/catalog/PpeClassificationDeleteCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/workitem/ExistingWorkItemAbstractController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/personalprotectionequipment/ExistingPpeAssignedRepository.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/domain/personalprotectionequipment/Ppe.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/audit/SafetyRuleRepositoryProcedure.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/functionmanual/FunctionManualResponse.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/workitem/ExistingWorkItemReadController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/catalog/WorkItemClassificationListController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/services/personalprotectionequipment/ExistingPpeService.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/common/response/rest/ErrorRestResponse.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personnel/DepartmentUpdateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/workitem/WorkItemRepository.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personnel/EmployeeAbstractController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/sickness/SicknessListCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/audit/AuditResponseBuilder.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/workitem/WorkItemCreateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/audit/SafetyRuleRepositoryProcedureImpl.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/functionmanual/FunctionManualListCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/services/common/GenericService.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/workitem/WorkItemDeleteCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/workitem/WorkItemReadCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/saclassification/SaTypeListCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/common/response/rest/PageableRestResponse.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/catalog/WorkItemClassificationListCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/personnel/EmployeeRepositoryProcedureImpl.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/accident/AccidentListCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/catalog/WorkItemClassificationRepositoryProcedureImpl.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/audit/AuditRepository.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/services/workitem/WorkItemService.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personnel/EmployeeReadController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/workitem/WorkItemUpdateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/PpeReadController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/sickness/SicknessReadController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/audit/SafetyRuleRepository.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/workitem/ExistingWorkItemAssignedRepositoryProcedureImpl.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/SaTypeProcedures.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/domain/ModelBase.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/WorkItemClassificationProcedures.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/saclassification/SaTypeRepository.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/sickness/SicknessDeleteController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/common/FileDocumentAbstractController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/audit/AuditListCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/services/audit/AuditService.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/personalprotectionequipment/PpeRepositoryProcedure.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/common/context/CommandScoped.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/domain/personalprotectionequipment/ExistingPpe.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/personalprotectionequipment/ExistingPpeListCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/request/personalprotectionequipment/ExistingPpeRequest.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/audit/SafetyRuleAbstractController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/catalog/WorkItemClassificationReadController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/personalprotectionequipment/ExistingPpeCreateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/sickness/SicknessUpdateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/personalprotectionequipment/PpeResponseBuilder.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/personalprotectionequipment/ExistingPpeAssignedReadCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/audit/SafetyRuleUpdateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personnel/RoleListController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/personnel/DepartmentRepositoryProcedureImpl.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/catalog/PpeClassificationResponse.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/audit/SafetyRuleCreateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/saclassification/SaTypeUpdateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/ExistingPpeAssignedListController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/services/workitem/ExistingWorkItemAssignedService.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/domain/workitem/ExistingWorkItemAssigned.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/personalprotectionequipment/ExistingPpeAssignedDeleteCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/request/saclassification/SaCategoryRequest.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/ExistingPpeUpdateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/common/cmd/Command.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/saclassification/SaTypeUpdateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personnel/DepartmentDeleteController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/accident/AccidentResponse.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/personalprotectionequipment/ExistingPpeDeleteCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/catalog/PpeClassificationReadCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/sickness/SicknessResponse.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/common/exception/DefaultExceptionHandler.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/catalog/WorkItemClassificationCreateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/workitem/ExistingWorkItemRepositoryProcedure.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/personalprotectionequipment/PpeListCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/functionmanual/FunctionManualUpdateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/workitem/WorkItemAbstractController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/sickness/SicknessAbstractController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/functionmanual/FunctionManualUpdateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/personnel/EmployeeRepository.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/PpeDeleteController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/PpeCreateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/audit/AuditRepositoryProcedure.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/personnel/RoleRepositoryProcedureImpl.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/audit/AuditCreateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personnel/DepartmentAbstractController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/audit/AuditRepositoryProcedureImpl.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/catalog/WorkItemClassificationUpdateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/request/workitem/WorkItemRequest.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/catalog/PpeClassificationListController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personnel/EmployeeCreateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/saclassification/SaTypeCreateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/personnel/DepartmentRepository.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/common/exception/DefaultSSIRuntimeException.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/domain/accident/Accident.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/saclassification/SaTypeDeleteController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personnel/RoleCreateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/workitem/WorkItemListController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/request/personnel/DepartmentRequest.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/domain/report/Report.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/ExistingPpeAssignedCreateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/domain/personnel/Department.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/saclassification/SaTypeListController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/exception/FileDocumentException.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/workitem/ExistingWorkItemAssignedRepositoryProcedure.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personnel/EmployeeDeleteController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/services/saClassification/SaTypeService.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/functionmanual/FunctionManualResponseBuilder.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/personnel/RoleResponseBuilder.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/personalprotectionequipment/ExistingPpeUpdateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/DepartmentProcedures.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/services/personalprotectionequipment/ExistingPpeAssignedService.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/Personnel/EmployeeReadCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/reports/ReportAbstractController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/catalog/WorkItemClassificationAbstractController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/functionmanual/FunctionManualDeleteCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/SaCategoryProcedures.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/saclassification/SaCategoryReadCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/domain/common/FileDocument.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/audit/AuditReadController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/domain/catalog/WorkItemClassification.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/workitem/ExistingWorkItemReadCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/saClassification/SaTypeRepositoryProcedure.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/catalog/PpeClassificationRepositoryProcedureImpl.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/ExistingPpeAssignedProcedures.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/saClassification/SaTypeRepositoryProcedureImpl.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/personalprotectionequipment/ExistingPpeRepositoryProcedure.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/audit/SafetyRuleDeleteCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/workitem/ExistingWorkItemRepositoryProcedureImpl.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/workitem/WorkItemCreateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/services/audit/SafetyRuleService.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/SafetyRuleProcedures.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/domain/personalprotectionequipment/ExistingPpeAssigned.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/accident/AccidentCreateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/catalog/WorkItemClassificationUpdateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/saclassification/SaCategoryDeleteController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/SicknessProcedures.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/workitem/WorkItemResponse.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/common/FileDocumentUploadController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/Personnel/DepartmentReadCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personnel/DepartmentCreateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/workitem/WorkItemReadController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/sickness/SicknessRepositoryProcedure.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/personnel/RoleRepository.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/workitem/WorkItemDeleteController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/Personnel/RoleCreateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/workitem/WorkItemRepositoryProcedureImpl.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/services/personalprotectionequipment/PpeService.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/workitem/ExistingWorkItemCreateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/workitem/ExistingWorkItemAssignedRepository.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/common/response/rest/SuccessRestResponse.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/request/workitem/ExistingWorkItemRequest.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/PpeUpdateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/sickness/SicknessRepository.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/accident/AccidentAbstractController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/PpeAbstractController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/request/personalprotectionequipment/PpeRequest.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/functionmanual/FunctionManualCreateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/workitem/ExistingWorkItemUpdateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/catalog/PpeClassificationUpdateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/Personnel/DepartmentListCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/personalprotectionequipment/PpeUpdateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/domain/personnel/Employee.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/workitem/WorkItemUpdateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/catalog/WorkItemClassificationRepository.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/common/response/rest/SingleRestResponse.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/reports/ReportListController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/saClassification/SaCategoryRepositoryProcedure.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/workitem/ExistingWorkItemRepository.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/Personnel/RoleReadCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/sickness/SicknessRepositoryProcedureImpl.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/common/FileDocumentUploadCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/PpeListController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/Personnel/RoleDeleteCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/services/saClassification/SaCategoryService.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/saclassification/SaCategoryListController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/catalog/WorkItemClassificationResponse.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/accident/AccidentRepository.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/Personnel/RoleListCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/domain/sickness/Sickness.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/personnel/EmployeeRepositoryProcedure.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/request/personnel/EmployeeRequest.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/saclassification/SaCategoryAbstractController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/domain/audit/SafetyRule.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/saClassification/SaTypeResponseBuilder.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/request/catalog/WorkItemClassificationRequest.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/exception/DeleteEntityNotFoundException.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/catalog/PpeClassificationCreateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/catalog/PpeClassificationDeleteController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/request/personnel/RoleRequest.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/common/cmd/CommandFactory.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/common/FileDocumentRepository.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/Personnel/EmployeeDeleteCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personnel/EmployeeUpdateController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/sickness/SicknessListController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/services/catalog/WorkItemClassificationService.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/accident/AccidentListController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/audit/SafetyRuleResponse.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/audit/SafetyRuleReadController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/saclassification/SaTypeAbstractController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/personalprotectionequipment/ExistingPpeResponseBuilder.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/bootsptrap/DevBootstrap.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/accident/AccidentRepositoryProcedure.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/audit/SafetyRuleListCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/audit/AuditDeleteCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/exception/DomainEntityNotFoundException.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/functionmanual/FunctionManualReadCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/domain/workitem/ExistingWorkItem.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/PersistenceConfig.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/ExistingWorkItemAssignedProcedures.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/accident/AccidentDeleteCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/common/constant/EnumSaCategory.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/catalog/WorkItemClassificationDeleteCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/catalog/PpeClassificationReadController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/personnel/RoleResponse.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/accident/AccidentRepositoryProcedureImpl.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/domain/catalog/PpeClassification.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/EmployeeProcedures.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/functionmanual/FunctionManualDeleteController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/catalog/WorkItemClassificationReadCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/audit/SafetyRuleReadCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/functionmanual/FunctionManualAbstractController.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/personalprotectionequipment/ExistingPpeAssignedUpdateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/workitem/ExistingWorkItemListCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/saclassification/SaTypeDeleteCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/cmd/workitem/ExistingWorkItemUpdateCmd.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/personalprotectionequipment/PpeRepositoryProcedureImpl.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/model/repository/storedprocedures/functionmanual/FunctionManualRepositoryProcedureImpl.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/response/catalog/PpeClassificationResponseBuilder.java
-/Users/HENRYBC/Documents/DIPLOMADO_HENRY/PROJECT/team A/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/ExistingPpeDeleteController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/Personnel/RoleCreateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/catalog/PpeClassificationRepository.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/personnel/DepartmentRepository.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/audit/AuditListController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/services/saClassification/SaCategoryService.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/workitem/ExistingWorkItemDeleteCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/PpeUpdateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/workitem/ExistingWorkItemAbstractController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/common/exception/DefaultSSIRuntimeException.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/common/cmd/CommandFactoryProducer.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personnel/DepartmentReadController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/workitem/ExistingWorkItemCreateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/functionmanual/FunctionManualDeleteCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/catalog/PpeClassificationListController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/audit/SafetyRuleListCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/request/catalog/PpeClassificationRequest.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/AccidentProcedures.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/domain/personalprotectionequipment/ExistingPpeAssigned.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/catalog/WorkItemClassificationDeleteCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/workitem/ExistingWorkItemReadController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/PpeAbstractController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/personnel/EmployeeRepositoryProcedure.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/request/personnel/RoleRequest.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/catalog/PpeClassificationUpdateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/functionmanual/FunctionManualUpdateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/audit/AuditResponseBuilder.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/workitem/WorkItemAbstractController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/auditHistory/AuditHistoryListController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personnel/RoleDeleteController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/services/audit/SafetyRuleService.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/catalog/WorkItemClassificationCreateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/request/catalog/WorkItemClassificationRequest.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/modeldw/domain/accident/AccidentReport.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/common/response/rest/RestResponse.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/personalprotectionequipment/PpeRepository.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/sickness/SicknessAbstractController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/ExistingPpeProcedures.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/PpeProcedures.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/domain/saClassification/SaType.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/domain/saClassification/SaCategory.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/audit/SafetyRuleUpdateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/workitem/WorkItemRepository.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personnel/RoleListController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/sickness/SicknessDeleteController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/domain/report/Report.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/reports/ReportAbstractController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/catalog/PpeClassificationCreateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/common/response/rest/SuccessRestResponse.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/request/workitem/ExistingWorkItemRequest.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/functionmanual/FunctionManualCreateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/saclassification/SaCategoryReadController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/Personnel/RoleUpdateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/workitem/WorkItemListController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/personalprotectionequipment/PpeResponse.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personnel/DepartmentDeleteController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/ExistingWorkItemAssignedProcedures.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/Personnel/RoleReadCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/bootsptrap/DevBootstrap.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/common/response/rest/RestMessage.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/services/auditHistory/AuditHistoryService.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/saClassification/SaTypeResponse.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/SicknessProcedures.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/audit/SafetyRuleRepository.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/catalog/PpeClassificationResponse.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/ExistingPpeAssignedAbstractController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/request/personalprotectionequipment/ExistingPpeRequest.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/accident/AccidentRepository.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/workitem/ExistingWorkItemRepository.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/domain/audit/Audit.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/request/saclassification/SaCategoryRequest.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/saclassification/SaCategoryDeleteCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/report/ReportResponseBuilder.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/DepartmentProcedures.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/personnel/RoleResponse.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/audit/AuditReadCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/PpeDeleteController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/audit/SafetyRuleRepositoryProcedure.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/personalprotectionequipment/PpeListCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/catalog/PpeClassificationCreateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/saclassification/SaTypeListController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/workitem/WorkItemUpdateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/workitem/ExistingWorkItemResponseBuilder.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/workitem/ExistingWorkItemRepositoryProcedure.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/sickness/SicknessDeleteCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/sickness/SicknessReadController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/saclassification/SaTypeReadCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/common/FileDocumentResponseBuilder.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/request/auditHistory/AuditHistoryRequest.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/services/personalprotectionequipment/ExistingPpeService.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/personalprotectionequipment/ExistingPpeAssignedDeleteCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/personalprotectionequipment/ExistingPpeResponseBuilder.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/personalprotectionequipment/PpeRepositoryProcedure.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/domain/workitem/ExistingWorkItem.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/personalprotectionequipment/ExistingPpeAssignedRepository.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/request/workitem/WorkItemRequest.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/catalog/PpeClassificationRepositoryProcedureImpl.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/personalprotectionequipment/ExistingPpeListCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personnel/RoleUpdateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/PpeListController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/services/functionmanual/FunctionManualService.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/common/cmd/CommandExecutorService.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/functionmanual/FunctionManualRepository.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/catalog/PpeClassificationDeleteCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/accident/AccidentRepositoryProcedureImpl.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/catalog/PpeClassificationDeleteController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/workitem/ExistingWorkItemUpdateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/saclassification/SaTypeDeleteController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/exception/FileDocumentException.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/services/saClassification/SaTypeService.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/workitem/ExistingWorkItemRepositoryProcedureImpl.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/services/personnel/EmployeeService.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/workitem/ExistingWorkItemUpdateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/workitem/WorkItemRepositoryProcedure.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/saClassification/SaCategoryResponse.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/saclassification/SaTypeDeleteCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/SaCategoryProcedures.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/domain/personalprotectionequipment/Ppe.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/config/model/Constants.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/audit/AuditAbstractController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/saclassification/SaTypeUpdateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/request/audit/SafetyRuleRequest.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/saClassification/SaTypeRepositoryProcedureImpl.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/services/common/FileDocumentService.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/Personnel/RoleDeleteCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/personalprotectionequipment/ExistingPpeResponse.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/personnel/EmployeeRepositoryProcedureImpl.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/accidentReport/AccidentReportAbstractController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/catalog/WorkItemClassificationCreateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/common/FileDocumentDownloadCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/functionmanual/FunctionManualResponse.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/exception/DeleteEntityNotFoundException.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/reports/ReportListController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/domain/audit/SafetyRule.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/functionmanual/FunctionManualResponseBuilder.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/personnel/DepartmentResponse.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/ExistingWorkItemProcedures.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/request/personalprotectionequipment/ExistingPpeAssignedRequest.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/saclassification/SaTypeCreateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/saclassification/SaTypeUpdateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/accident/AccidentRepositoryProcedure.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/personnel/EmployeeRepository.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/workitem/ExistingWorkItemListController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/request/personnel/DepartmentRequest.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/services/common/GenericService.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/ExistingPpeAssignedReadController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/audit/AuditUpdateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/workitem/WorkItemUpdateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/catalog/PpeClassificationUpdateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/common/GenericRepositoryProcedure.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/request/personnel/EmployeeRequest.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/personnel/DepartmentResponseBuilder.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/saclassification/SaTypeReadController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/ExistingPpeDeleteController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personnel/RoleCreateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/audit/AuditListCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/saclassification/SaTypeRepository.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/audit/SafetyRuleResponseBuilder.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/saclassification/SaCategoryCreateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/sickness/SicknessResponseBuilder.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/Personnel/DepartmentCreateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/audit/AuditRepositoryProcedure.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/Personnel/DepartmentDeleteCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/services/catalog/PpeClassificationService.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/personalprotectionequipment/PpeCreateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/catalog/WorkItemClassificationListController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/workitem/ExistingWorkItemResponse.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/GenericProcedureNames.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/audit/SafetyRuleListController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/workitem/ExistingWorkItemAssignedRepositoryProcedureImpl.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/sickness/SicknessUpdateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personnel/DepartmentUpdateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/auditHistory/AuditHistoryRepository.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/catalog/PpeClassificationReadController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/domain/workitem/ExistingWorkItemAssigned.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/catalog/PpeClassificationResponseBuilder.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/Personnel/EmployeeListCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/sickness/SicknessResponse.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/ExistingPpeCreateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/audit/AuditReadController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/audit/SafetyRuleResponse.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personnel/EmployeeUpdateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/sickness/SicknessUpdateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personnel/EmployeeReadController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/catalog/WorkItemClassificationRepositoryProcedureImpl.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/personalprotectionequipment/ExistingPpeRepositoryProcedure.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/accidentReport/AccidentReportController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/personalprotectionequipment/ExistingPpeAssignedCreateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/SafetyRuleProcedures.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/accident/AccidentUpdateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/exception/DomainEntityNotFoundException.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/workitem/WorkItemResponseBuilder.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/catalog/WorkItemClassificationRepositoryProcedure.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/common/response/rest/ListRestResponse.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/services/personnel/DepartmentService.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/functionmanual/FunctionManualListCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/functionmanual/FunctionManualAbstractController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/saclassification/SaCategoryListController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/common/FileDocumentDownloadController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/domain/accident/Accident.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/AuditProcedures.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/workitem/ExistingWorkItemListCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/personalprotectionequipment/ExistingPpeAssignedRepositoryProcedureImpl.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/functionmanual/FunctionManualReadCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/saClassification/SaCategoryRepositoryProcedureImpl.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/PersistenceConfig.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/Personnel/EmployeeCreateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/sickness/SicknessRepositoryProcedure.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/workitem/WorkItemDeleteCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/accident/AccidentReadCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/workitem/ExistingWorkItemReadCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/common/cmd/AbstractCommand.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/domain/functionmanual/FunctionManual.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/audit/SafetyRuleUpdateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/saClassification/SaCategoryRepositoryProcedure.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/request/functionmanual/FunctionManualRequest.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/personnel/EmployeeResponse.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/personalprotectionequipment/ExistingPpeDeleteCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/personalprotectionequipment/ExistingPpeCreateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/domain/sickness/Sickness.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/accident/AccidentDeleteCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/common/GenericRepositoryProcedureImpl.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/audit/SafetyRuleDeleteCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/common/FileDocumentResponse.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/accident/AccidentResponse.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/PpeReadController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/common/utils/Constants.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personnel/EmployeeDeleteController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/accident/AccidentListCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/audit/SafetyRuleAbstractController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/audit/SafetyRuleCreateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/audit/AuditResponse.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/config/model/SsiDataWarehouseDBConfig.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/personalprotectionequipment/ExistingPpeUpdateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/request/sickness/SicknessRequest.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/catalog/PpeClassificationRepositoryProcedure.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/audit/SafetyRuleReadCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/Personnel/EmployeeDeleteCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/PpeCreateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/personalprotectionequipment/ExistingPpeAssignedResponse.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/workitem/ExistingWorkItemAssignedRepository.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/services/audit/AuditService.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/ExistingPpeAssignedUpdateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/Personnel/RoleListCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/audit/AuditDeleteCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/report/ReportResponse.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/personnel/DepartmentRepositoryProcedureImpl.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/personnel/EmployeeResponseBuilder.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/functionmanual/FunctionManualDeleteController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/personalprotectionequipment/PpeResponseBuilder.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/saClassification/SaTypeRepositoryProcedure.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/Personnel/EmployeeReadCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/common/cmd/CommandFactory.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/common/response/rest/PageableRestResponse.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/personalprotectionequipment/ExistingPpeAssignedResponseBuilder.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/ExistingPpeListController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/SaTypeProcedures.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/personalprotectionequipment/PpeReadCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/domain/personnel/Department.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/catalog/WorkItemClassificationAbstractController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/functionmanual/FunctionManualUpdateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/personnel/RoleRepository.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/saclassification/SaTypeListCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/catalog/WorkItemClassificationUpdateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/common/FileDocumentAbstractController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/saclassification/SaCategoryCreateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/Personnel/DepartmentUpdateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/common/exception/DefaultExceptionHandler.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/saclassification/SaCategoryDeleteController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/PpeClassificationProcedures.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/common/FileDocumentUploadCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personnel/DepartmentCreateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/audit/AuditCreateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/EmployeeProcedures.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/domain/personnel/Role.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/domain/personnel/Employee.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/services/accidentReport/AccidentReportService.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/services/accident/AccidentService.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/workitem/WorkItemResponse.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/FunctionManualProcedures.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/functionmanual/FunctionManualReadController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/audit/AuditUpdateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/request/report/ReportRequest.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/domain/workitem/WorkItem.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/catalog/WorkItemClassificationRepository.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/sickness/SicknessCreateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/personalprotectionequipment/ExistingPpeReadCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/accident/AccidentResponseBuilder.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/audit/SafetyRuleReadController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/accident/AccidentDeleteController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/accident/AccidentListController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/catalog/WorkItemClassificationReadController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/request/audit/AuditRequest.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/services/personalprotectionequipment/ExistingPpeAssignedService.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/common/response/rest/ErrorRestResponse.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/ExistingPpeUpdateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/personalprotectionequipment/PpeDeleteCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/RoleProcedures.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/auditHistory/AuditHistoryResponseBuilder.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/domain/catalog/PpeClassification.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/accident/AccidentCreateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personnel/DepartmentAbstractController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/common/constant/EnumSaCategory.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/saclassification/SaTypeCreateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/services/workitem/ExistingWorkItemService.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/catalog/PpeClassificationReadCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/workitem/WorkItemListCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/catalog/WorkItemClassificationUpdateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/common/context/CommandScoped.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/workitem/WorkItemRepositoryProcedureImpl.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/personalprotectionequipment/ExistingPpeRepositoryProcedureImpl.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/SsiApplication.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/personalprotectionequipment/ExistingPpeAssignedRepositoryProcedure.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/domain/ModelBase.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/domain/common/FileDocument.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/functionmanual/FunctionManualRepositoryProcedureImpl.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/sickness/SicknessListCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/workitem/ExistingWorkItemAssignedRepositoryProcedure.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/audit/AuditRepository.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/catalog/PpeClassificationListCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/accident/AccidentUpdateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/Personnel/EmployeeUpdateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/workitem/WorkItemReadCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personnel/RoleReadController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/personnel/RoleRepositoryProcedureImpl.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/request/accident/AccidentRequest.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personnel/RoleAbstractController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/personnel/DepartmentRepositoryProcedure.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/services/personalprotectionequipment/PpeService.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/accident/AccidentReadController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/sickness/SicknessRepository.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/personnel/RoleRepositoryProcedure.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/request/saclassification/SaTypeRequest.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/workitem/WorkItemCreateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/personalprotectionequipment/ExistingPpeAssignedListCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/ExistingPpeAbstractController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/accident/AccidentCreateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/auditHistory/AuditHistoryAbstractController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/workitem/WorkItemDeleteController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/services/personnel/RoleService.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/config/model/SsiDBConfig.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/workitem/ExistingWorkItemCreateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/functionmanual/FunctionManualRepositoryProcedure.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/catalog/WorkItemClassificationResponseBuilder.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/catalog/WorkItemClassificationResponse.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/saClassification/SaTypeResponseBuilder.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/domain/auditHistory/AuditHistory_SSI.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personnel/EmployeeCreateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/services/workitem/WorkItemService.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/sickness/SicknessListController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/common/FileDocumentRepository.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/personalprotectionequipment/PpeRepositoryProcedureImpl.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/ExistingPpeReadController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/personalprotectionequipment/ExistingPpeAssignedReadCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/services/catalog/WorkItemClassificationService.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/WorkItemProcedures.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/saClassification/SaCategoryResponseBuilder.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/sickness/SicknessRepositoryProcedureImpl.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/personalprotectionequipment/ExistingPpeAssignedUpdateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/accident/AccidentAbstractController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/domain/catalog/WorkItemClassification.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/services/workitem/ExistingWorkItemAssignedService.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/saclassification/SaTypeAbstractController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/sickness/SicknessReadCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/catalog/WorkItemClassificationDeleteController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personnel/DepartmentListController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/common/response/rest/SingleRestResponse.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/audit/SafetyRuleRepositoryProcedureImpl.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/request/personalprotectionequipment/PpeRequest.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/config/RestConfig.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/sickness/SicknessCreateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/exception/DeleteEntityConstraintViolationException.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/auditHistory/AuditHistoryResponse.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/auditHistory/AuditHistoryListCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/saclassification/SaCategoryAbstractController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/catalog/PpeClassificationAbstractController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/workitem/ExistingWorkItemDeleteController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/personalprotectionequipment/PpeUpdateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/audit/AuditCreateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/personalprotectionequipment/ExistingPpeRepository.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/ExistingPpeAssignedProcedures.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/saclassification/SaCategoryRepository.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/ExistingPpeAssignedListController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/config/SwaggerConfig.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/audit/AuditDeleteController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personnel/EmployeeAbstractController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/ExistingPpeAssignedCreateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/services/sickness/SicknessService.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/audit/SafetyRuleCreateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/catalog/WorkItemClassificationListCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/saclassification/SaCategoryUpdateCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/functionmanual/FunctionManualCreateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/saclassification/SaCategoryUpdateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/functionmanual/FunctionManualListController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/domain/personalprotectionequipment/ExistingPpe.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/util/WorkItemClassificationProcedures.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/common/constant/EnumSaType.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/catalog/WorkItemClassificationReadCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/saclassification/SaCategoryReadCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/Personnel/DepartmentListCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/common/FileDocumentUploadController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/workitem/WorkItemCreateController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/workitem/WorkItemReadController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/saclassification/SaCategoryListCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/cmd/Personnel/DepartmentReadCmd.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/model/repository/storedprocedures/audit/AuditRepositoryProcedureImpl.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personnel/EmployeeListController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/personalprotectionequipment/ExistingPpeAssignedDeleteController.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/common/cmd/Command.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/response/personnel/RoleResponseBuilder.java
+/Users/HENRYBC/Documents/DIPLOMADO_HENRY/MODULO5/actividadRemedial/backend/src/main/java/com/groupa/ssi/controller/audit/SafetyRuleDeleteController.java

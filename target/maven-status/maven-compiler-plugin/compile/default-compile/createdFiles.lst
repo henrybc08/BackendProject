@@ -1,5 +1,7 @@
 com/groupa/ssi/model/repository/storedprocedures/personalprotectionequipment/ExistingPpeAssignedRepositoryProcedure.class
+com/groupa/ssi/services/auditHistory/AuditHistoryService.class
 com/groupa/ssi/cmd/audit/SafetyRuleDeleteCmd.class
+com/groupa/ssi/controller/auditHistory/AuditHistoryAbstractController.class
 com/groupa/ssi/controller/workitem/ExistingWorkItemDeleteController.class
 com/groupa/ssi/controller/personnel/DepartmentListController.class
 com/groupa/ssi/common/exception/DefaultSSIRuntimeException.class
@@ -7,6 +9,7 @@ com/groupa/ssi/response/personnel/RoleResponseBuilder.class
 com/groupa/ssi/common/cmd/CommandExecutorService.class
 com/groupa/ssi/model/repository/audit/SafetyRuleRepository.class
 com/groupa/ssi/model/repository/storedprocedures/personnel/RoleRepositoryProcedureImpl.class
+com/groupa/ssi/config/model/SsiDBConfig.class
 com/groupa/ssi/model/domain/accident/Accident.class
 com/groupa/ssi/controller/common/FileDocumentDownloadController.class
 com/groupa/ssi/model/repository/storedprocedures/util/SicknessProcedures.class
@@ -20,6 +23,7 @@ com/groupa/ssi/response/sickness/SicknessResponseBuilder.class
 com/groupa/ssi/response/accident/AccidentResponseBuilder.class
 com/groupa/ssi/model/repository/personnel/DepartmentRepository.class
 com/groupa/ssi/model/domain/saClassification/SaType.class
+com/groupa/ssi/request/auditHistory/AuditHistoryRequest.class
 com/groupa/ssi/response/functionmanual/FunctionManualResponseBuilder.class
 com/groupa/ssi/model/repository/personnel/RoleRepository.class
 com/groupa/ssi/controller/workitem/WorkItemAbstractController.class
@@ -108,6 +112,7 @@ com/groupa/ssi/response/personnel/EmployeeResponseBuilder.class
 com/groupa/ssi/model/domain/catalog/PpeClassification.class
 com/groupa/ssi/controller/personnel/DepartmentCreateController.class
 com/groupa/ssi/services/functionmanual/FunctionManualService.class
+com/groupa/ssi/config/model/Constants$SsiDataWarehousePersistence.class
 com/groupa/ssi/cmd/functionmanual/FunctionManualUpdateCmd.class
 com/groupa/ssi/model/repository/saclassification/SaCategoryRepository.class
 com/groupa/ssi/model/domain/functionmanual/FunctionManual.class
@@ -150,6 +155,7 @@ com/groupa/ssi/cmd/audit/SafetyRuleUpdateCmd.class
 com/groupa/ssi/cmd/personalprotectionequipment/PpeListCmd.class
 com/groupa/ssi/response/workitem/WorkItemResponse.class
 com/groupa/ssi/model/repository/personalprotectionequipment/ExistingPpeRepository.class
+com/groupa/ssi/model/domain/auditHistory/AuditHistory_SSI.class
 com/groupa/ssi/model/repository/storedprocedures/util/ExistingWorkItemAssignedProcedures.class
 com/groupa/ssi/request/report/ReportRequest.class
 com/groupa/ssi/controller/personnel/RoleReadController.class
@@ -166,6 +172,7 @@ com/groupa/ssi/controller/audit/SafetyRuleUpdateController.class
 com/groupa/ssi/controller/personalprotectionequipment/PpeReadController.class
 com/groupa/ssi/controller/sickness/SicknessReadController.class
 com/groupa/ssi/request/audit/AuditRequest.class
+com/groupa/ssi/config/model/Constants$SsiPersistence.class
 com/groupa/ssi/model/domain/personnel/Role.class
 com/groupa/ssi/cmd/sickness/SicknessDeleteCmd.class
 com/groupa/ssi/model/repository/storedprocedures/util/WorkItemProcedures.class
@@ -188,6 +195,7 @@ com/groupa/ssi/model/repository/storedprocedures/workitem/ExistingWorkItemReposi
 com/groupa/ssi/common/response/rest/ListRestResponse.class
 com/groupa/ssi/request/personalprotectionequipment/ExistingPpeAssignedRequest.class
 com/groupa/ssi/controller/workitem/ExistingWorkItemCreateController.class
+com/groupa/ssi/config/model/Constants.class
 com/groupa/ssi/model/domain/common/FileDocument.class
 com/groupa/ssi/controller/saclassification/SaCategoryDeleteController.class
 com/groupa/ssi/controller/catalog/PpeClassificationUpdateController.class
@@ -216,6 +224,7 @@ com/groupa/ssi/cmd/catalog/PpeClassificationCreateCmd.class
 com/groupa/ssi/request/workitem/ExistingWorkItemRequest.class
 com/groupa/ssi/cmd/catalog/PpeClassificationUpdateCmd.class
 com/groupa/ssi/PersistenceConfig.class
+com/groupa/ssi/model/repository/auditHistory/AuditHistoryRepository.class
 com/groupa/ssi/request/saclassification/SaTypeRequest.class
 com/groupa/ssi/model/repository/storedprocedures/util/EmployeeProcedures.class
 com/groupa/ssi/controller/catalog/WorkItemClassificationDeleteController.class
@@ -228,6 +237,7 @@ com/groupa/ssi/cmd/Personnel/DepartmentReadCmd.class
 com/groupa/ssi/model/domain/workitem/ExistingWorkItem.class
 com/groupa/ssi/response/catalog/PpeClassificationResponseBuilder.class
 com/groupa/ssi/controller/personalprotectionequipment/ExistingPpeAssignedCreateController.class
+com/groupa/ssi/services/accidentReport/AccidentReportService.class
 com/groupa/ssi/cmd/audit/SafetyRuleCreateCmd.class
 com/groupa/ssi/model/repository/storedprocedures/common/GenericRepositoryProcedure.class
 com/groupa/ssi/controller/audit/AuditUpdateController.class
@@ -251,13 +261,16 @@ com/groupa/ssi/common/response/rest/SingleRestResponse.class
 com/groupa/ssi/model/repository/personnel/EmployeeRepository.class
 com/groupa/ssi/cmd/functionmanual/FunctionManualCreateCmd.class
 com/groupa/ssi/request/sickness/SicknessRequest.class
+com/groupa/ssi/controller/accidentReport/AccidentReportController.class
 com/groupa/ssi/cmd/accident/AccidentUpdateCmd.class
+com/groupa/ssi/cmd/auditHistory/AuditHistoryListCmd.class
 com/groupa/ssi/controller/personnel/EmployeeDeleteController.class
 com/groupa/ssi/cmd/personalprotectionequipment/ExistingPpeAssignedReadCmd.class
 com/groupa/ssi/services/personalprotectionequipment/ExistingPpeAssignedService.class
 com/groupa/ssi/common/cmd/CommandFactoryProducer.class
 com/groupa/ssi/controller/personalprotectionequipment/PpeUpdateController.class
 com/groupa/ssi/model/repository/storedprocedures/personnel/DepartmentRepositoryProcedure.class
+com/groupa/ssi/controller/accidentReport/AccidentReportAbstractController.class
 com/groupa/ssi/controller/personalprotectionequipment/PpeCreateController.class
 com/groupa/ssi/model/domain/saClassification/SaCategory.class
 com/groupa/ssi/services/personnel/EmployeeService.class
@@ -293,9 +306,11 @@ com/groupa/ssi/cmd/saclassification/SaTypeListCmd.class
 com/groupa/ssi/response/saClassification/SaCategoryResponseBuilder.class
 com/groupa/ssi/controller/workitem/WorkItemCreateController.class
 com/groupa/ssi/common/cmd/AbstractCommand.class
+com/groupa/ssi/config/model/SsiDataWarehouseDBConfig.class
 com/groupa/ssi/response/saClassification/SaTypeResponse.class
 com/groupa/ssi/model/repository/storedprocedures/util/WorkItemClassificationProcedures.class
 com/groupa/ssi/model/repository/storedprocedures/catalog/WorkItemClassificationRepositoryProcedureImpl.class
+com/groupa/ssi/modeldw/domain/accident/AccidentReport.class
 com/groupa/ssi/model/repository/storedprocedures/util/FunctionManualProcedures.class
 com/groupa/ssi/controller/accident/AccidentAbstractController.class
 com/groupa/ssi/cmd/workitem/WorkItemCreateCmd.class
@@ -317,7 +332,9 @@ com/groupa/ssi/controller/personnel/RoleDeleteController.class
 com/groupa/ssi/model/repository/common/FileDocumentRepository.class
 com/groupa/ssi/controller/personnel/EmployeeCreateController.class
 com/groupa/ssi/cmd/catalog/WorkItemClassificationListCmd.class
+com/groupa/ssi/response/auditHistory/AuditHistoryResponse.class
 com/groupa/ssi/model/repository/audit/AuditRepository.class
+com/groupa/ssi/controller/auditHistory/AuditHistoryListController.class
 com/groupa/ssi/cmd/audit/AuditDeleteCmd.class
 com/groupa/ssi/request/functionmanual/FunctionManualRequest.class
 com/groupa/ssi/cmd/Personnel/RoleUpdateCmd.class
@@ -340,6 +357,7 @@ com/groupa/ssi/cmd/catalog/WorkItemClassificationUpdateCmd.class
 com/groupa/ssi/controller/workitem/ExistingWorkItemUpdateController.class
 com/groupa/ssi/services/catalog/PpeClassificationService.class
 com/groupa/ssi/exception/DomainEntityNotFoundException.class
+com/groupa/ssi/response/auditHistory/AuditHistoryResponseBuilder.class
 com/groupa/ssi/controller/audit/AuditAbstractController.class
 com/groupa/ssi/controller/accident/AccidentReadController.class
 com/groupa/ssi/cmd/personalprotectionequipment/ExistingPpeReadCmd.class
