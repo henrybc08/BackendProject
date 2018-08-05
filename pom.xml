@@ -88,7 +88,6 @@
 			<name>Snapshot</name>
 			<url>http://192.168.43.166:8081/repository/maven-snapshots/</url>
 		</snapshotRepository>
-		
 	</distributionManagement>
 
 
