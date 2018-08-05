@@ -1,10 +1,7 @@
-FROM node:8.9.3
-MAINTAINER Henry Bustamante
-RUN npm install -g @angular/cli
-RUN npm rebuild node-sass --force
-RUN mkdir /code
-WORKDIR /code
-COPY package.json /code/
-ADD . /code/
-RUN npm install
-CMD [ "ng", "serve", "--host", "0.0.0.0", "--port", "4200"]
+FROM openjdk:8-jdk-alpine
+
+COPY target/ssi-0.0.1-SNAPSHOT.jar .
+
+CMD /usr/bin/java -Xmx400m -Xms400m -jar ssi-0.0.1-SNAPSHOT.jar
+
+EXPOSE 8080
