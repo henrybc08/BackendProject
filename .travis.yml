@@ -1,0 +1,2 @@
+languaje: node-js
+script: mvn clean compile package
